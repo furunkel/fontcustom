@@ -94,3 +94,6 @@
 
 # Horizontally fit glyphs to their individual vector widths.
 #autowidth: false
+
+# Automatically hint font (requires ttfautohint to be installed).
+#autohint: false

@@ -18,14 +18,19 @@ from a collection of SVGs
 
 Requires **Ruby 1.9.2+**, **FontForge** with Python scripting.
 
+#### On Mac
 ```sh
-# On Mac
 brew install fontforge --with-python
 brew install eot-utils
-gem install fontcustom
+brew install ttfautohint # optional - needed for autohint option
 
-# On Linux
+gem install fontcustom
+```
+
+#### On Linux
+```sh
 sudo apt-get install fontforge
+sudo apt-get install ttfautohint # optional - needed for autohint option
 wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
 unzip woff-code-latest.zip -d sfnt2woff && cd sfnt2woff && make && sudo mv sfnt2woff /usr/local/bin/
 gem install fontcustom

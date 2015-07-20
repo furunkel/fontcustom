@@ -35,6 +35,7 @@ module Fontcustom
     :css_selector => ".icon-{{glyph}}",
     :preprocessor_path => nil,
     :autowidth => false,
+    :autohint => false,
     :no_hash => false,
     :debug => false,
     :force => false,

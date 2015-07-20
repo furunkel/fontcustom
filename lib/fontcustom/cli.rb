@@ -49,6 +49,9 @@ module Fontcustom
     class_option :preprocessor_path, :aliases => %w|--prepath -p|, :type => :string,
       :desc => "For Rails and Compass templates, set this as the relative path from your compiled CSS to your font output directory."
 
+    class_option :autohint, :type => :boolean,
+      :desc => "Automatically hint font using ttfautohint."
+
     class_option :autowidth, :aliases => "-A", :type => :boolean,
       :desc => "Horizontally fit glyphs to their individual vector widths."
 
